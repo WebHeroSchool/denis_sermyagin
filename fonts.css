@@ -44,7 +44,7 @@
 
 @font-face {
     font-family: 'Roboto';
-    src:url('fonts/Roboto-Regular.woff');
+    src: url('fonts/Roboto-Regular.woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -54,7 +54,7 @@
 
 @font-face {
     font-family: 'Roboto';
-    src:url('fonts/Roboto-italic.woff');
+    src: url('fonts/Roboto-italic.woff');
     font-weight: normal;
     font-style: italic;
 }
@@ -64,7 +64,7 @@
 
 @font-face {
     font-family: 'Roboto';
-    src:url('fonts/Roboto-Bold.woff');
+    src: url('fonts/Roboto-Bold.woff');
     font-weight: bold;
     font-style: normal;
 }
@@ -74,7 +74,7 @@
 
 @font-face {
     font-family: 'Roboto';
-    src:url('fonts/Roboto-BoldItalic.woff');
+    src: url('fonts/Roboto-BoldItalic.woff');
     font-weight: bold;
     font-style: italic;
 }

@@ -10,6 +10,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 200px;
 }
 
 .logo {
@@ -87,6 +88,48 @@ body {
 
 .main-content {
   position: absolute;
-  top: 50%;
-  left: 20%;
+  padding: 0 63% 200px 0;
+  background: url(img/mainImg.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.main-content__title {
+  margin: 0 0 40px 0;
+  font-family: 'pt_serif', arial, helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 87px;
+}
+
+.main-content__subtitle {
+  margin: 0 0 41px 0;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.main-content__title-text_highlight {
+  background: #ECF3FF
+}
+
+.main-content__button {
+  text-decoration: none;
+  display: inline-block;
+  width: 250px;
+  font-size: 18px;
+  font-family: 'Roboto', arial, helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding-top: 18px;
+  padding-bottom: 10px;
+  padding-left: 21px;
+  background: #0056EC;
+  border-radius: 4px;
+  transition: opacity .5s;
+}
+
+.main-content__button:hover {
+  opacity: .5;
 }
