@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'pt_serifbold';
+    font-family: 'pt_serif';
     src: url('fonts/ptserif-bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 
 }
@@ -10,10 +10,10 @@
 
 
 @font-face {
-    font-family: 'pt_serifbold_italic';
+    font-family: 'pt_serif';
     src: url('fonts/ptserif-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: bold;
+    font-style: italic;
 
 }
 
@@ -21,10 +21,10 @@
 
 
 @font-face {
-    font-family: 'pt_serifitalic';
+    font-family: 'pt_serif';
     src: url('fonts/ptserif-italic-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 
 }
 
@@ -37,4 +37,44 @@
     font-weight: normal;
     font-style: normal;
 
+}
+
+
+
+
+@font-face {
+    font-family: 'Roboto';
+    src:url('fonts/Roboto-Regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'Roboto';
+    src:url('fonts/Roboto-italic.woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+
+@font-face {
+    font-family: 'Roboto';
+    src:url('fonts/Roboto-Bold.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'Roboto';
+    src:url('fonts/Roboto-BoldItalic.woff');
+    font-weight: bold;
+    font-style: italic;
 }

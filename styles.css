@@ -16,9 +16,11 @@ body {
   position: relative;
   padding: 40px 0;
   padding-left: 44px;
-  font-family: pt_serifbold, arial, helvetica, sans-serif;
+  font-family: 'pt_serif', arial, helvetica, sans-serif;
   font-size: 24px;
   line-height: 31px;
+  font-style: normal;
+  font-weight: bold;
 }
 
 .logo__circle {
@@ -50,8 +52,8 @@ body {
 .menu__item, .menu__item_active {
   position: relative;
   margin-right: 26px;
-  font-family: Roboto, arial, helvetica, sans-serif;
-  font-style: 500;
+  font-family: 'Roboto', arial, helvetica, sans-serif;
+  font-style: normal;
   font-size: 18px;
   line-height: 21px;
   color: #000;
