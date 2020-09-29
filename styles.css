@@ -149,6 +149,7 @@ body {
 @media(max-width: 700px) {
   .menu {
     display: none;
+    z-index: 30303030;
   }
 
   .header {
@@ -269,7 +270,7 @@ body {
   }
 
   /* элементы меню */
-  .menu__item {
+  .menu__item, .menu__item_active {
     display: block;
     padding: 12px 24px;
     color: #333;
@@ -277,6 +278,10 @@ body {
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
+  }
+
+  .menu__item_active::after, .menu__item::after {
+    visibility: hidden;
   }
 
   .menu__item:hover {
@@ -287,8 +292,8 @@ body {
     transform: rotate(45deg);
   }
 
-  ##menu__toggle:checked ~ .main-content__title {
-    opacity: 0.5;
+  #menu__toggle:checked ~ .main-content__title {
+    opacity: 0;
   }
 
   #menu__toggle:checked ~ .menu__btn > span::before {
