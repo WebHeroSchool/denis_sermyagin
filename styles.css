@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  visibility: hidden;
 }
 
 #menu__toggle {
@@ -8,9 +9,149 @@ body {
   margin-bottom: 26px;
 }
 
+@keyframes opensite {
+  0% {
+    visibility: visible;
+    opacity: 0%;
+  }
+  100% {
+    visibility: visible;
+    opacity: 100%;
+  }
+}
+
+@keyframes hidePreloader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+.preloader {
+  position: absolute;
+  width: auto;
+  height: auto;
+  background: white;
+  overflow: hidden;
+  left: 35%;
+  bottom: 50%;
+  text-align: center;
+  animation-name: opensite;
+  animation-duration: 3.5s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-name: hidePreloader;
+  animation-duration: 3.5s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#center {
+  display: inline-block;
+  width: 600px;
+  height: 40px;
+  background: white;
+  border: 2px solid #cfd8e8;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 5px rgba(0.81,0.85,0.91,0.2);
+  margin-top: 20%;
+  z-index: 1;
+}
+
+.referal-img {
+  visibility: hidden;
+  position: relative;
+  width: 40px;
+  margin: 0 -200% 0 0;
+  z-index: 2;
+}
+
+#main {
+  width: 200px;
+  height: 40px;
+  background: #0056EC;
+  float: left;
+}
+
+.row {
+  height: 10px;
+  width: 400px;
+  float: left;
+  display: inherit;
+}
+
+.sq {
+  height: 10px;
+  width: 133px;
+  float: left;
+  background: white;
+}
+
+@keyframes progress {
+  0% {
+    opacity: 0%;
+    background: #0056EC;
+  }
+  25% {
+    opacity: 25%;
+    background: #0056EC;
+  }
+  50% {
+    opacity: 50%;
+    background: #0056EC;
+  }
+  75% {
+    opacity: 75%;
+    background: #0056EC;
+  }
+  100% {
+    opacity: 100%;
+    background: #0056EC;
+  }
+}
+
+.first {
+  animation-name: progress;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.second {
+  animation-name: progress;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.third {
+  animation-name: progress;
+  animation-duration: 1s;
+  animation-delay: 2.5s;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
 .wrapper {
   margin: auto;
   width: 80%;
+  animation-name: opensite;
+  animation-duration: 2s;
+  animation-delay: 3.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .header {
@@ -133,6 +274,8 @@ body {
 @media (min-width: 1200px) and (max-width: 1900px) {
   .wrapper {
     width: 80%;
+    animation-delay: 0s;
+    animation-duration: 2s;
   }
 
   .header{
@@ -191,6 +334,8 @@ body {
 @media (min-width: 999px) and (max-width: 1100px) {
   .wrapper {
     width: 1024px;
+    animation-delay: 0s;
+    animation-duration: 2s;
   }
 
   .logo {
@@ -234,6 +379,11 @@ body {
 }
 
 @media (min-width: 100px) and (max-width: 700px) {
+  .wrapper {
+    animation-delay: 0s;
+    animation-duration: 2s;
+  }
+
   .menu {
     display: none;
     z-index: 30303030;
