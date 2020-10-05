@@ -229,7 +229,6 @@ body {
 }
 
 .main-content {
-  position: absolute;
   padding: 100px 63% 200px 0;
   background: url(img/mainImg.svg);
   background-repeat: no-repeat;
@@ -340,7 +339,7 @@ body {
   .preloader {
     display: none;
   }
-  
+
   .wrapper {
     width: 1024px;
     animation-name: opensite;
