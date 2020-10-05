@@ -1,6 +1,17 @@
 body {
   margin: 0;
-  visibility: hidden;
+  background: linear-gradient(to left, #8e2de2, #4a00e0);
+  animation-name: changeBack;
+  animation-duration: 0s;
+  animation-delay: 3.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes changeBack {
+  100% {
+    background: white;
+  }
 }
 
 #menu__toggle {
@@ -33,16 +44,10 @@ body {
   position: absolute;
   width: auto;
   height: auto;
-  background: white;
   overflow: hidden;
   left: 35%;
   bottom: 50%;
   text-align: center;
-  animation-name: opensite;
-  animation-duration: 3.5s;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
   animation-name: hidePreloader;
   animation-duration: 3.5s;
   animation-delay: 0s;
@@ -145,6 +150,7 @@ body {
 }
 
 .wrapper {
+  visibility: hidden;
   margin: auto;
   width: 80%;
   animation-name: opensite;
@@ -232,8 +238,7 @@ body {
   padding: 100px 63% 200px 0;
   background: url(img/mainImg.svg);
   background-repeat: no-repeat;
-  background-position: top right;
-  background-position: right 19% bottom 65px;
+  background-position: right -1% bottom 65px;
 }
 
 .main-content__title {
@@ -242,7 +247,7 @@ body {
 }
 
 .main-content__subtitle {
-  margin: -2px 32px 43px 4px;
+  margin: -2px 82px 43px 4px;
   font: 500 22px/25px 'Roboto';
 }
 
