@@ -16,7 +16,6 @@ body {
 
 #menu__toggle {
   visibility: hidden;
-  background: hidden;
   margin-bottom: 26px;
 }
 
@@ -276,6 +275,10 @@ body {
 }
 
 @media (min-width: 1200px) and (max-width: 1900px) {
+  body {
+    background: white;
+  }
+
   .preloader {
     display: none;
   }
@@ -298,7 +301,7 @@ body {
   .menu__item, .menu__item_active {
     position: relative;
     font-size: 14px;
-    padding: 0px 19px 0px 17px;
+    padding: 0px 33px 0px 0;
     margin-left: -32px;
     margin-top: 1px;
 
@@ -311,8 +314,8 @@ body {
   }
 
   .main-content{
-    background-size: 37%;
-    background-position: right 42% bottom 144px;
+    background-size: 48%;
+    background-position: right 14% bottom 135px;
   }
 
   .main-content__title {
@@ -326,6 +329,7 @@ body {
   .main-content__subtitle {
     font-size: 18px;
     line-height: 23px;
+    width: 350px;
     margin: 0px 41px 43px 83px;
   }
 
@@ -341,6 +345,10 @@ body {
 }
 
 @media (min-width: 999px) and (max-width: 1100px) {
+  body {
+    background: white;
+  }
+
   .preloader {
     display: none;
   }
@@ -387,12 +395,16 @@ body {
     padding: 12px 0 4px 20px;
   }
   .main-content{
-    background-size: 45%;
-    background-position: right 25% bottom 144px;
+    background-size: 50%;
+    background-position: right 9% bottom 144px;
   }
 }
 
 @media (min-width: 100px) and (max-width: 700px) {
+  body {
+    background: white;
+  }
+
   .preloader {
     display: none;
   }
@@ -414,10 +426,10 @@ body {
 
   .main-content {
     text-align: center;
-    padding: 74% 0 0;
-    margin: 0 -19px 0 0;
+    padding: 84% 0 0;
+    margin: 30px -58px -16px 0;
     background-size: 74%;
-    background-position: top 30px left 16%;
+    background-position: top -4px left 16%;
   }
 
   .main-content__title {
@@ -438,11 +450,11 @@ body {
     padding: 11px 14px 10px 6px;
     margin-right: 82px;
     font: 500 14px 'Roboto';
-    margin-top: 16px;
+    margin-top: -39px;
     width: 52%;
     height: 20px;
-    bottom: -66px;
-    right: 6%;
+    bottom: 45px;
+    right: -1%;
     position: absolute;
   }
 
