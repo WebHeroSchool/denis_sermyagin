@@ -428,23 +428,23 @@ body {
   .main-content {
     text-align: center;
     padding: 84% 0 0;
-    margin: 30px -58px -16px 0;
-    background-size: 74%;
-    background-position: top -4px left 16%;
+    margin: 30px 0 -16px 0;
+    background-size: 93%;
+    background-position: top -4px left 50%;
   }
 
   .main-content__title {
-    margin-right: 51px;
+    margin-right: 0;
     margin-bottom: 44px;
     font: 700 30px/40px 'pt_serif';
   }
 
   .main-content__subtitle {
     font: bold 16px/19px 'Roboto';
-    width: 73%;
-    padding-left: 12px;
+    padding-left: 20px;
     padding-top: 3px;
-    margin: -14px -0 2px 10px;
+    width: 83%;
+    margin: -19px -0 2px 10px;
   }
 
   .main-content__button {
